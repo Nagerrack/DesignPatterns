@@ -4,21 +4,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Goal class representing a goal scored for a certain team
+ * Goal Class representing a goal scored for a certain team
+ * Holds a list of observers spectating the event
  *
- * @author AD
+ * @author Adam Dębczak
  */
-
 public class Goal {
 
     private List<Observer> observers = new ArrayList<Observer>();
     private String scoringTeam;
 
+    /**
+     * Default class constructor
+     */
+    public Goal() {
+    }
+
+    /**
+     * @return The team that scored current goal
+     */
     public String getScoringTeam() {
         return scoringTeam;
     }
 
     /**
+     * Setting the state of the subject and notifying all observers
+     *
      * @param scoringTeam Team that scored a certain goal
      */
     public void setScoringTeam(String scoringTeam) {
@@ -29,13 +40,14 @@ public class Goal {
     /**
      * Attach observer to an event
      */
-
-    public void attach(Observer observer){
+    public void attach(Observer observer) {
         observers.add(observer);
     }
 
-
-    public void notifyAllObservers(){
+    /**
+     * Notify all observers
+     */
+    public void notifyAllObservers() {
         for (Observer observer : observers) {
             observer.update();
         }

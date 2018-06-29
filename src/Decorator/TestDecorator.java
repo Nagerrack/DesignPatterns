@@ -7,28 +7,25 @@ import org.junit.Test;
 /**
  * Class for testing Pancake Decorator
  *
- * @author AD
+ * @author Adam Dębczak
  */
-
 public class TestDecorator {
+
     @Test
-    public void testPancakewithSprinkles()
-    {
-        Pancake withSprinkles =  new Sprinkles(new PlainPancake());
-        assertEquals(withSprinkles.getClass(),Sprinkles.class);
+    public void testPancakewithSprinkles() {
+        Pancake withSprinkles = new Sprinkles(new PlainPancake());
+        assertEquals(withSprinkles.getClass(), Sprinkles.class);
     }
 
     @Test
-    public void testPancakewithMapleSyrup()
-    {
-        Pancake withMapleSyrup =  new MapleSyrup(new PlainPancake());
-        assertEquals(withMapleSyrup.getClass(),MapleSyrup.class);
+    public void testPancakewithMapleSyrup() {
+        Pancake withMapleSyrup = new MapleSyrup(new PlainPancake());
+        assertEquals(withMapleSyrup.getClass(), MapleSyrup.class);
     }
 
     @Test
-    public void testPancakewithBlueberries()
-    {
-        Pancake withBlueberries =  new Blueberries(new PlainPancake());
-        assertEquals(withBlueberries.getClass(),Blueberries.class);
+    public void testPancakewithBlueberries() {
+        Pancake withBlueberries = new Blueberries(new PlainPancake());
+        assertEquals(withBlueberries.getClass(), Blueberries.class);
     }
 }

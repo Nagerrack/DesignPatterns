@@ -3,18 +3,21 @@ package Decorator;
 /**
  * Sprinkles - Concrete Addition to a Pancake
  *
- * @author AD
+ * @author Adam Dębczak
  */
-
 public class Sprinkles extends PancakeDecorator {
     /**
+     * Class constructor
+     *
      * @param p Pancake to be decorated
      */
-    public Sprinkles(Pancake p)
-    {
+    public Sprinkles(Pancake p) {
         super(p);
     }
 
+    /**
+     * Adding Sprinkles to a pancake
+     */
     @Override
     public void Serve() {
         super.Serve();

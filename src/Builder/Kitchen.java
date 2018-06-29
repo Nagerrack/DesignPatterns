@@ -3,10 +3,8 @@ package Builder;
 /**
  * Class representing a Kitchen
  *
- * @author AD
+ * @author Adam Dębczak
  */
-
-
 public class Kitchen {
     private int cupboards;
     private int chairs;
@@ -22,7 +20,6 @@ public class Kitchen {
      *
      * @param kitchenBuilder Builder for creating a kitchen object
      */
-
     private Kitchen(KitchenBuilder kitchenBuilder) {
         this.chairs = kitchenBuilder.getChairs();
         this.cupboards = kitchenBuilder.getCupboards();
@@ -84,6 +81,12 @@ public class Kitchen {
         return chairs;
     }
 
+    /**
+     * Static inner class KitchenBuilder
+     * Responsible for kitchen assembly
+     *
+     * @author Adam Dębczak
+     */
     public static class KitchenBuilder {
         private int cupboards;
         private int chairs;
@@ -95,20 +98,14 @@ public class Kitchen {
         private boolean dishwasher;
 
         /**
+         * Class Constructor
+         *
          * @param cupboards Amount of cupboards mounted in a kitchen
          * @param chairs    Amount of chairs placed in a kitchen
          * @param table     Description of a table
          * @param oven      Description of an oven
          * @param sink      Description of a sink
          */
-
-
-        /**
-         * Class responsible for assembling a Kitchen
-         *
-         * @author AD
-         */
-
         public KitchenBuilder(int cupboards, int chairs, String table, String oven, String sink) {
             this.cupboards = cupboards;
             this.chairs = chairs;

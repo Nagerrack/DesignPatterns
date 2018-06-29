@@ -3,18 +3,21 @@ package Decorator;
 /**
  * Blueberries - Concrete Addition to a Pancake
  *
- * @author AD
+ * @author Adam Dębczak
  */
-
 public class Blueberries extends PancakeDecorator {
     /**
+     * Class constructor
+     *
      * @param p Pancake to be decorated
      */
-    public Blueberries(Pancake p)
-    {
+    public Blueberries(Pancake p) {
         super(p);
     }
 
+    /**
+     * Adding blueberries to a pancake
+     */
     @Override
     public void Serve() {
         super.Serve();

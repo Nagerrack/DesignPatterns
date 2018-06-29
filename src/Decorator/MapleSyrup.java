@@ -3,19 +3,22 @@ package Decorator;
 /**
  * MapleSyrup - Concrete Addition to a Pancake
  *
- * @author AD
+ * @author Adam Dębczak
  */
-
-public class MapleSyrup extends PancakeDecorator{
+public class MapleSyrup extends PancakeDecorator {
 
     /**
+     * Class constructor
+     *
      * @param p Pancake to be decorated
      */
-    public MapleSyrup(Pancake p)
-    {
+    public MapleSyrup(Pancake p) {
         super(p);
     }
 
+    /**
+     * Adding Maple Syrup to a pancake
+     */
     @Override
     public void Serve() {
         super.Serve();

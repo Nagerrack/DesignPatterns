@@ -3,11 +3,11 @@ package Observer;
 /**
  * Observer pattern Implementation
  *
- * @author AD
+ * @author Adam Dębczak
  */
-
 public class Main {
     public static void main(String[] args) {
+
         String team1 = "TeamA";
         String team2 = "TeamB";
 

@@ -3,9 +3,8 @@ package Adapter;
 /**
  * Connector Interface
  *
- * @author AD
+ * @author Adam Dębczak
  */
-
 public interface Connector {
     /**
      * Basic Connection method

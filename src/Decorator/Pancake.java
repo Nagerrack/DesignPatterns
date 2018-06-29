@@ -3,12 +3,12 @@ package Decorator;
 /**
  * Pancake Interface
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public interface Pancake {
     /**
-     * Basic action performed on a pancake - serving
+     * Basic action performed on a pancake and all additives - serving
      */
     public void Serve();
 

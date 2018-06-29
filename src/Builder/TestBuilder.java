@@ -8,48 +8,42 @@ import org.junit.Test;
 /**
  * Class for testing Kitchen Builder
  *
- * @author AD
+ * @author Adam Dębczak
  */
-
 public class TestBuilder {
     Kitchen kitchenExample;
 
     @Before
-    public void init() throws Exception
-    {
+    public void init() throws Exception {
         kitchenExample = new Kitchen
-                .KitchenBuilder(1,1,"Table","Oven","Sink").build();
+                .KitchenBuilder(1, 1, "Table", "Oven", "Sink").build();
     }
 
     @Test
-    public void testObjectCreation()
-    {
+    public void testObjectCreation() {
         assertFalse(kitchenExample.isMicrowave());
         assertFalse(kitchenExample.isDishwasher());
     }
 
     @Test
-    public void testAmounts()
-    {
+    public void testAmounts() {
         int chairAmount = 4;
         int cupboardAmount = 6;
 
         kitchenExample = new Kitchen
-                .KitchenBuilder(cupboardAmount,chairAmount,"Table","Oven","Sink").build();
+                .KitchenBuilder(cupboardAmount, chairAmount, "Table", "Oven", "Sink").build();
 
-       assertEquals(chairAmount,kitchenExample.getChairs());
-       assertEquals(cupboardAmount,kitchenExample.getCupboards());
+        assertEquals(chairAmount, kitchenExample.getChairs());
+        assertEquals(cupboardAmount, kitchenExample.getCupboards());
     }
 
-
     @Test
-    public void testOptional()
-    {
+    public void testOptional() {
         int chairAmount = 4;
         int cupboardAmount = 6;
 
         kitchenExample = new Kitchen
-                .KitchenBuilder(chairAmount,cupboardAmount,"Table","Oven","Sink")
+                .KitchenBuilder(chairAmount, cupboardAmount, "Table", "Oven", "Sink")
                 .setMicrowave(true).build();
 
         assertTrue(kitchenExample.isMicrowave());

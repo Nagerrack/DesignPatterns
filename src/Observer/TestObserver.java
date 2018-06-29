@@ -8,8 +8,7 @@ import org.junit.Test;
 /**
  * Class for testing Goal Observer
  *
- * @author AD
+ * @author Adam Dębczak
  */
-
 public class TestObserver {
 }

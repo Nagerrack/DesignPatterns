@@ -3,13 +3,19 @@ package Adapter;
 /**
  * Connection Adapter Class for handling Adapters
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class ConnectionAdapter implements Connector {
+
     DVItoHDMI dvItoHDMI;
+
     VGAtoHDMI vgAtoHDMI;
 
+    /**
+     * Class constructor
+     * Instantiating all available adapter
+     */
     public ConnectionAdapter() {
         dvItoHDMI = new DVItoHDMI();
         vgAtoHDMI = new VGAtoHDMI();

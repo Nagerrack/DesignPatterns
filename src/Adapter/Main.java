@@ -3,7 +3,7 @@ package Adapter;
 /**
  * Adapter pattern Implementation
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class Main {
@@ -12,5 +12,6 @@ public class Main {
         Connector adapter = new ConnectionAdapter();
         adapter.Connect("vga","hdmi");
         adapter.Connect("dvi","hdmi");
+        adapter.Connect("hdmi","vga");
     }
 }
