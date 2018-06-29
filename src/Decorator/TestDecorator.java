@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * Class for testing Pancake Decorator
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class TestDecorator {

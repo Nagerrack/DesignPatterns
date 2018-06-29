@@ -3,7 +3,7 @@ package Decorator;
 /**
  * Decorator pattern Implementation
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class Main {

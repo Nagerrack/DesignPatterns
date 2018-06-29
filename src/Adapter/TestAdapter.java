@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * Class for testing Connection Adapter
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class TestAdapter {

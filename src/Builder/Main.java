@@ -3,7 +3,7 @@ package Builder;
 /**
  * Builder pattern Implementation
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class Main {

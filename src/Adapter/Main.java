@@ -3,7 +3,7 @@ package Adapter;
 /**
  * Adapter pattern Implementation
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class Main {

@@ -3,7 +3,7 @@ package Observer;
 /**
  * Observer pattern Implementation
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class Main {

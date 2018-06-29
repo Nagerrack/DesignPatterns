@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * Class for testing Kitchen Builder
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class TestBuilder {

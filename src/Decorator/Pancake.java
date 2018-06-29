@@ -3,7 +3,7 @@ package Decorator;
 /**
  * Pancake Interface
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public interface Pancake {

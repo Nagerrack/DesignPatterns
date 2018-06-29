@@ -3,7 +3,7 @@ package Observer;
 /**
  * Abstract Observer Class
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public abstract class Observer {

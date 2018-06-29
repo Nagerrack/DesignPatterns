@@ -3,7 +3,7 @@ package Decorator;
 /**
  * MapleSyrup - Concrete Addition to a Pancake
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class MapleSyrup extends PancakeDecorator{

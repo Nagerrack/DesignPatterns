@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Goal class representing a goal scored for a certain team
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class Goal {

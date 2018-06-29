@@ -3,7 +3,7 @@ package Adapter;
 /**
  * VGA to HDMI adapter
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class DVItoHDMI {

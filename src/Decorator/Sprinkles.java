@@ -3,7 +3,7 @@ package Decorator;
 /**
  * Sprinkles - Concrete Addition to a Pancake
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class Sprinkles extends PancakeDecorator {

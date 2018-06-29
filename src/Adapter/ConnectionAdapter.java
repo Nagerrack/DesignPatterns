@@ -3,7 +3,7 @@ package Adapter;
 /**
  * Connection Adapter Class for handling Adapters
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class ConnectionAdapter implements Connector {

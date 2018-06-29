@@ -3,7 +3,7 @@ package Decorator;
 /**
  * Blueberries - Concrete Addition to a Pancake
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 public class Blueberries extends PancakeDecorator {

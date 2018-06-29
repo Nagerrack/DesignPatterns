@@ -3,7 +3,7 @@ package Builder;
 /**
  * Class representing a Kitchen
  *
- * @author AD
+ * @author Adam Dębczak
  */
 
 
@@ -106,7 +106,7 @@ public class Kitchen {
         /**
          * Class responsible for assembling a Kitchen
          *
-         * @author AD
+         * @author Adam Dębczak
          */
 
         public KitchenBuilder(int cupboards, int chairs, String table, String oven, String sink) {
