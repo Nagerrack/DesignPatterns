@@ -24,6 +24,8 @@ public class Product implements StoredElement {
     }
 
     /**
+     * Get the price of a single product
+     *
      * @return Price of a single product
      */
     @Override
@@ -32,6 +34,8 @@ public class Product implements StoredElement {
     }
 
     /**
+     * Get the weight of a single product
+     *
      * @return Weight of a single product
      */
     @Override
@@ -40,6 +44,8 @@ public class Product implements StoredElement {
     }
 
     /**
+     * Get the quantity of a single product
+     *
      * @return Quantity of a single product
      */
     @Override
@@ -48,6 +54,8 @@ public class Product implements StoredElement {
     }
 
     /**
+     * Get the product's name
+     *
      * @return Name used for displaying a whole tree-like structure of elements contained in one another
      */
     @Override

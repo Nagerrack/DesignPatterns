@@ -6,6 +6,7 @@ package Decorator;
  * @author Adam Debczak
  */
 public class Sprinkles extends PancakeDecorator {
+
     /**
      * Class constructor
      *

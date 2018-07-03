@@ -22,8 +22,8 @@ public class TestBuilder {
 
     @Test
     public void testObjectCreation() {
-        assertFalse(kitchenExample.isMicrowave());
-        assertFalse(kitchenExample.isDishwasher());
+        assertFalse(kitchenExample.hasMicrowave());
+        assertFalse(kitchenExample.hasDishwasher());
     }
 
     @Test
@@ -47,6 +47,6 @@ public class TestBuilder {
                 .KitchenBuilder(chairAmount, cupboardAmount, "Table", "Oven", "Sink")
                 .setMicrowave(true).build();
 
-        assertTrue(kitchenExample.isMicrowave());
+        assertTrue(kitchenExample.hasMicrowave());
     }
 }

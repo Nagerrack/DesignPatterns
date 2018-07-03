@@ -6,6 +6,7 @@ package Observer;
  * @author Adam Debczak
  */
 public abstract class Observer {
+
     /**
      * Goal that is observed by spectators
      */
