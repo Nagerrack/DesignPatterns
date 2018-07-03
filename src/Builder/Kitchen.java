@@ -26,8 +26,8 @@ public class Kitchen {
         this.table = kitchenBuilder.getTable();
         this.oven = kitchenBuilder.getOven();
         this.sink = kitchenBuilder.getSink();
-        this.microwave = kitchenBuilder.isMicrowave();
-        this.dishwasher = kitchenBuilder.isDishwasher();
+        this.microwave = kitchenBuilder.hasMicrowave();
+        this.dishwasher = kitchenBuilder.hasDishwasher();
     }
 
     /**
@@ -51,7 +51,7 @@ public class Kitchen {
             result += "Oven: " + oven + "\n";
 
         if (!sink.equals(null))
-            result += "Table: " + sink + "\n";
+            result += "Sink: " + sink + "\n";
 
         result += "Optional: ";
         if (!microwave && !dishwasher)
@@ -65,18 +65,38 @@ public class Kitchen {
         return result;
     }
 
-    public boolean isMicrowave() {
+    /**
+     * Check whether kitchen has an optional microwave installed
+     *
+     * @return Whether kitchen has an optional microwave installed
+     */
+    public boolean hasMicrowave() {
         return microwave;
     }
 
-    public boolean isDishwasher() {
+    /**
+     * Check whether kitchen has an optional dishwasher installed
+     *
+     * @return Whether kitchen has an optional dishwasher installed
+     */
+    public boolean hasDishwasher() {
         return dishwasher;
     }
 
+    /**
+     * Get the amount of cupboards
+     *
+     * @return Amount of cupboards
+     */
     public int getCupboards() {
         return cupboards;
     }
 
+    /**
+     * Get the amount of chairs
+     *
+     * @return Amount of chairs
+     */
     public int getChairs() {
         return chairs;
     }
@@ -112,44 +132,75 @@ public class Kitchen {
             this.table = table;
             this.oven = oven;
             this.sink = sink;
-
         }
 
-
+        /**
+         * Get the amount of cupboards
+         *
+         * @return Amount of cupboards
+         */
         public int getCupboards() {
             return cupboards;
         }
 
-
+        /**
+         * Get the amount of chairs
+         *
+         * @return Amount of chairs
+         */
         public int getChairs() {
             return chairs;
         }
 
-
+        /**
+         * Get the description of the table
+         *
+         * @return the description of the table
+         */
         public String getTable() {
             return table;
         }
 
-
+        /**
+         * Get the description of the oven
+         *
+         * @return the description of the oven
+         */
         public String getOven() {
             return oven;
         }
 
+        /**
+         * Get the description of the sink
+         *
+         * @return the description of the sink
+         */
         public String getSink() {
             return sink;
         }
 
-
-        public boolean isMicrowave() {
+        /**
+         * Check whether kitchen has an optional microwave installed
+         *
+         * @return Whether kitchen has an optional microwave installed
+         */
+        public boolean hasMicrowave() {
             return microwave;
         }
 
-        public boolean isDishwasher() {
+        /**
+         * Check whether kitchen has an optional dishwasher installed
+         *
+         * @return Whether kitchen has an optional dishwasher installed
+         */
+        public boolean hasDishwasher() {
             return dishwasher;
         }
 
 
         /**
+         * Set the optional parameter to mount in a kitchen
+         *
          * @param microwave Optional parameter to mount in a kitchen
          */
         public KitchenBuilder setMicrowave(boolean microwave) {
@@ -158,6 +209,8 @@ public class Kitchen {
         }
 
         /**
+         * Set the optional parameter to mount in a kitchen
+         *
          * @param dishwasher Optional parameter to mount in a kitchen
          */
         public KitchenBuilder setDishwasher(boolean dishwasher) {
@@ -167,6 +220,8 @@ public class Kitchen {
 
 
         /**
+         * Build kitchen with the current parameters
+         *
          * @return An instance of a built kitchen
          */
         public Kitchen build() {

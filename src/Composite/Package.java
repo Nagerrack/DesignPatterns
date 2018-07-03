@@ -36,6 +36,8 @@ public class Package implements StoredElement {
     }
 
     /**
+     * Add element to a Package
+     *
      * @param storedElement Element to be added can be either a {@link Package} or a {@link Product}.
      */
     public void addElement(StoredElement storedElement) {
@@ -43,6 +45,8 @@ public class Package implements StoredElement {
     }
 
     /**
+     * Get content of a package
+     *
      * @return Content of a package
      */
     public List<StoredElement> getContent() {
@@ -50,6 +54,8 @@ public class Package implements StoredElement {
     }
 
     /**
+     * Sum the price of all products contained in a Package
+     *
      * @return Total price of all products contained in a Package
      */
     @Override
@@ -62,6 +68,8 @@ public class Package implements StoredElement {
     }
 
     /**
+     * Sum the weight of all products contained in a Package
+     *
      * @return Total weight of all products contained in a Package
      */
     @Override
@@ -74,6 +82,8 @@ public class Package implements StoredElement {
     }
 
     /**
+     * Get the quantity of all products contained in a Package
+     *
      * @return Quantity of all products contained in a Package
      */
     @Override
@@ -86,6 +96,8 @@ public class Package implements StoredElement {
     }
 
     /**
+     * Convert package into a string describing its' content
+     *
      * @return String used for displaying a whole tree-like structure of elements contained in one another
      */
     @Override

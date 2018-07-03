@@ -6,6 +6,7 @@ package Decorator;
  * @author Adam Debczak
  */
 public class PlainPancake implements Pancake {
+
     /**
      * Basic action performed on a pancake - serving
      */

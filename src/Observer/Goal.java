@@ -21,6 +21,17 @@ public class Goal {
     }
 
     /**
+     * Get the list of spectators witnessing the goal
+     *
+     * @return List of observers
+     */
+    public List<Observer> getObservers() {
+        return observers;
+    }
+
+    /**
+     * Get the team that scored the current goal
+     *
      * @return The team that scored current goal
      */
     public String getScoringTeam() {
@@ -39,6 +50,7 @@ public class Goal {
 
     /**
      * Attach observer to an event
+     *
      * @param observer Spectator observing the goal
      */
     public void attach(Observer observer) {
