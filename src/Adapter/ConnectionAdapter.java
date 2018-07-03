@@ -3,9 +3,8 @@ package Adapter;
 /**
  * Connection Adapter Class for handling Adapters
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
-
 public class ConnectionAdapter implements Connector {
 
     DVItoHDMI dvItoHDMI;

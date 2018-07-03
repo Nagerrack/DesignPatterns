@@ -3,7 +3,7 @@ package Decorator;
 /**
  * Pancake Decorator Class
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
 public class PancakeDecorator implements Pancake {
     protected Pancake p;

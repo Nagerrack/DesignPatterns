@@ -3,7 +3,7 @@ package Builder;
 /**
  * Class representing a Kitchen
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
 public class Kitchen {
     private int cupboards;
@@ -85,7 +85,7 @@ public class Kitchen {
      * Static inner class KitchenBuilder
      * Responsible for kitchen assembly
      *
-     * @author Adam Dębczak
+     * @author Adam Debczak
      */
     public static class KitchenBuilder {
         private int cupboards;

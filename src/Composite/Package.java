@@ -6,6 +6,8 @@ import java.util.List;
 /**
  * Class representing a Package
  * Contains various products or other packages
+ *
+ * @author Adam Debczak
  */
 public class Package implements StoredElement {
 

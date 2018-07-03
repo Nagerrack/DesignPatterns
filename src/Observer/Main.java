@@ -3,7 +3,7 @@ package Observer;
 /**
  * Observer pattern Implementation
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
 public class Main {
     public static void main(String[] args) {

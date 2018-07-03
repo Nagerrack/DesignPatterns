@@ -3,7 +3,7 @@ package Decorator;
 /**
  * Basic Pancake Class
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
 public class PlainPancake implements Pancake {
     /**

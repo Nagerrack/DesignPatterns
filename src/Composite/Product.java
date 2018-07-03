@@ -2,6 +2,8 @@ package Composite;
 
 /**
  * Class representing a single Product
+ *
+ * @author Adam Debczak
  */
 public class Product implements StoredElement {
     private String name;

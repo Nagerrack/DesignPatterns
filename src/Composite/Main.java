@@ -3,7 +3,7 @@ package Composite;
 /**
  * Composite pattern Implementation
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
 public class Main {
     public static void main(String[] args) {
@@ -14,8 +14,6 @@ public class Main {
             storage.addElement(new Product("Product" + i, Math.pow(2, i) - i, i * 1.25));
         }
         storage.addElement(new Package(4, 10.5, 2.5));
-
-
 
         System.out.println("Total Price: " + storage.TotalPrice());
         System.out.println("Total Weight: " + storage.TotalWeight());

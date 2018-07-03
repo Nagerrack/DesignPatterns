@@ -1,11 +1,10 @@
 package Adapter;
 
 /**
- * VGA to HDMI adapter
+ * DVI to HDMI adapter
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
-
 public class DVItoHDMI {
     /**
      * Adapter connection from DVI to HDMI

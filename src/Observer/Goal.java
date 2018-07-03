@@ -7,7 +7,7 @@ import java.util.List;
  * Goal Class representing a goal scored for a certain team
  * Holds a list of observers spectating the event
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
 public class Goal {
 
@@ -39,6 +39,7 @@ public class Goal {
 
     /**
      * Attach observer to an event
+     * @param observer Spectator observing the goal
      */
     public void attach(Observer observer) {
         observers.add(observer);

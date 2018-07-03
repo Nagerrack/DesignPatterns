@@ -3,7 +3,7 @@ package Adapter;
 /**
  * Connector Interface
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
 public interface Connector {
     /**

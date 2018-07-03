@@ -3,7 +3,7 @@ package Composite;
 /**
  * Class for testing Package Composite
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
 public class TestComposite {
 }

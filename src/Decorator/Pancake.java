@@ -3,9 +3,8 @@ package Decorator;
 /**
  * Pancake Interface
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
-
 public interface Pancake {
     /**
      * Basic action performed on a pancake and all additives - serving

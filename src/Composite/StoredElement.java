@@ -2,6 +2,8 @@ package Composite;
 
 /**
  * Interface describing an element, a basic or composite one
+ *
+ * @author Adam Debczak
  */
 public interface StoredElement {
     /**

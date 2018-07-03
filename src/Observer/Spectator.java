@@ -3,6 +3,8 @@ package Observer;
 /**
  * Concrete implementation of an observer
  * Spectator that performs an action depending which team scored a goal
+ *
+ * @author Adam Debczak
  */
 public class Spectator extends Observer {
 

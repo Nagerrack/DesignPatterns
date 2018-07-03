@@ -3,9 +3,8 @@ package Builder;
 /**
  * Builder pattern Implementation
  *
- * @author Adam Dębczak
+ * @author Adam Debczak
  */
-
 public class Main {
     public static void main(String[] args) {
         Kitchen kitchen = new Kitchen.KitchenBuilder(3, 4, "Maple 2x3m", "Beko 5600W", "Stainless Steel")
