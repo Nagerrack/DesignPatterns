@@ -1,9 +1,9 @@
 package Builder;
 
-import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Class for testing Kitchen Builder
@@ -12,41 +12,49 @@ import org.junit.Test;
  */
 public class TestBuilder {
 
-    Kitchen kitchenExample;
+    private static final int CHAIR_AMOUNT = 4;
+    private static final int CUPBOARD_AMOUNT = 6;
+
+    private Kitchen kitchenExample;
 
     @Before
-    public void init() throws Exception {
+    public void init() {
         kitchenExample = new Kitchen
                 .KitchenBuilder(1, 1, "Table", "Oven", "Sink").build();
     }
 
+    /**
+     * Test checking whether optional attributes are not set after default creation
+     */
     @Test
     public void testObjectCreation() {
-        assertFalse(kitchenExample.hasMicrowave());
-        assertFalse(kitchenExample.hasDishwasher());
+        assertThat(kitchenExample.hasMicrowave()).isFalse();
+        assertThat(kitchenExample.hasDishwasher()).isFalse();
     }
 
+    /**
+     * Test checking whether builder is setting the right amounts
+     */
     @Test
     public void testAmounts() {
-        int chairAmount = 4;
-        int cupboardAmount = 6;
 
         kitchenExample = new Kitchen
-                .KitchenBuilder(cupboardAmount, chairAmount, "Table", "Oven", "Sink").build();
+                .KitchenBuilder(CUPBOARD_AMOUNT, CHAIR_AMOUNT, "Table", "Oven", "Sink").build();
 
-        assertEquals(chairAmount, kitchenExample.getChairs());
-        assertEquals(cupboardAmount, kitchenExample.getCupboards());
+        assertThat(kitchenExample.getChairs()).isEqualTo(CHAIR_AMOUNT);
+        assertThat(kitchenExample.getCupboards()).isEqualTo(CUPBOARD_AMOUNT);
     }
 
+    /**
+     * Test checking whether an optional atribute is true after explicitly setting during build
+     */
     @Test
     public void testOptional() {
-        int chairAmount = 4;
-        int cupboardAmount = 6;
 
         kitchenExample = new Kitchen
-                .KitchenBuilder(chairAmount, cupboardAmount, "Table", "Oven", "Sink")
+                .KitchenBuilder(CHAIR_AMOUNT, CUPBOARD_AMOUNT, "Table", "Oven", "Sink")
                 .setMicrowave(true).build();
 
-        assertTrue(kitchenExample.hasMicrowave());
+        assertThat(kitchenExample.hasMicrowave()).isTrue();
     }
 }

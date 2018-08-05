@@ -1,9 +1,9 @@
 package Observer;
 
-import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Class for testing Goal Observer
@@ -12,7 +12,7 @@ import org.junit.Test;
  */
 public class TestObserver {
 
-    Goal goal;
+    private Goal goal;
 
     @Before
     public void init() {
@@ -26,10 +26,11 @@ public class TestObserver {
         new Spectator(goal, "Spectator3", team1);
     }
 
+    /**
+     * Test checking whether the right amount of observers are subscribed after creation
+     */
     @Test
     public void testObserverAddition() {
-        assertEquals(3, goal.getObservers().size());
+        assertThat(goal.getObservers()).hasSize(3);
     }
-
-
 }

@@ -26,7 +26,7 @@ public class ConnectionAdapter implements Connector {
      * @param in  Input of adapter connection
      * @param out Output of adapter connection
      */
-    public void Connect(String in, String out) {
+    public boolean Connect(String in, String out) {
         if (out.equalsIgnoreCase("hdmi")) {
             if (in.equalsIgnoreCase("vga")) {
                 vgAtoHDMI.Connect();
@@ -37,8 +37,9 @@ public class ConnectionAdapter implements Connector {
             }
         } else {
             System.out.println("Unsupported adapter format");
+            return false;
         }
-
+        return true;
     }
 
 }

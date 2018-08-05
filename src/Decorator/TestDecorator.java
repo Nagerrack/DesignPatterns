@@ -1,8 +1,8 @@
 package Decorator;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Class for testing Pancake Decorator
@@ -11,21 +11,30 @@ import org.junit.Test;
  */
 public class TestDecorator {
 
+    /**
+     * Test checking if object was successfully decorated with {@link Sprinkles}
+     */
     @Test
-    public void testPancakewithSprinkles() {
+    public void testPancakeWithSprinkles() {
         Pancake withSprinkles = new Sprinkles(new PlainPancake());
-        assertEquals(withSprinkles.getClass(), Sprinkles.class);
+        assertThat(withSprinkles.getClass()).isEqualTo(Sprinkles.class);
     }
 
+    /**
+     * Test checking if object was successfully decorated with {@link MapleSyrup}
+     */
     @Test
-    public void testPancakewithMapleSyrup() {
+    public void testPancakeWithMapleSyrup() {
         Pancake withMapleSyrup = new MapleSyrup(new PlainPancake());
-        assertEquals(withMapleSyrup.getClass(), MapleSyrup.class);
+        assertThat(withMapleSyrup.getClass()).isEqualTo(MapleSyrup.class);
     }
 
+    /**
+     * Test checking if object was successfully decorated with {@link Blueberries}
+     */
     @Test
-    public void testPancakewithBlueberries() {
+    public void testPancakeWithBlueberries() {
         Pancake withBlueberries = new Blueberries(new PlainPancake());
-        assertEquals(withBlueberries.getClass(), Blueberries.class);
+        assertThat(withBlueberries.getClass()).isEqualTo(Blueberries.class);
     }
 }

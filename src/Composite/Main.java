@@ -6,7 +6,9 @@ package Composite;
  * @author Adam Debczak
  */
 public class Main {
+
     public static void main(String[] args) {
+
         Package storage = new Package();
 
         storage.addElement(new Package(2, 10.5, 2.5));
