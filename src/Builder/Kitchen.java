@@ -202,6 +202,7 @@ public class Kitchen {
          * Set the optional parameter to mount in a kitchen
          *
          * @param microwave Optional parameter to mount in a kitchen
+         * @return Kitchen Builder
          */
         public KitchenBuilder setMicrowave(boolean microwave) {
             this.microwave = microwave;
@@ -212,6 +213,7 @@ public class Kitchen {
          * Set the optional parameter to mount in a kitchen
          *
          * @param dishwasher Optional parameter to mount in a kitchen
+         * @return Kitchen Builder
          */
         public KitchenBuilder setDishwasher(boolean dishwasher) {
             this.dishwasher = dishwasher;
